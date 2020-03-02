@@ -1,0 +1,81 @@
+/* Background Image */
+body {
+  background-image: url("https://www.wallpaperbetter.com/wallpaper/918/35/580/dark-green-lake-2K-wallpaper-middle-size.jpg");
+  background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+}
+
+/* Navigation bar */
+.topnav {
+    background-color: rgb(13, 63, 13);
+    overflow: hidden;
+    width: 100%;
+  }
+/* Links within navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 25%;
+    text-align: center;
+    padding: 0px;
+  }
+
+  /* Hover state */
+  .topnav a:hover {
+    background-color: rgb(71, 134, 100);
+    color: white;
+  }
+
+
+/* Main text */
+.maintext {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 45px;
+color: rgb(13, 63, 13);
+font-weight: bold;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+
+/* Subtext */
+.subtext {
+font-size: 40px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+color: rgb(13, 63, 13);
+justify-content: center;
+}
+
+
+/* text1 */
+.text1 {
+  color: white;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+/* row */
+.row {
+  display: inline-block;
+}
+
+/* column */
+.column {
+  display: inline-block;
+  margin: 0 auto;
+  width: 20%;
+  margin: 6%;
+}

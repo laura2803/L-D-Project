@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Harmony Charity Group</title>
+        <link rel="stylesheet" type="text/css" href="../CSS-files/aboutus-css.css">
+    </head>
+<script>
+    function openTab(tabName) {
+        var i, x;
+        x = document.getElementsByClassName("containerTab");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+      }
+    </script>
+
+<div class="topnav" id="myTopnav">
+    <a href="./Homepage.html" class="active">Home</a>
+    <a href="./Get-involved.html">Get Involved<a>
+    <a href="./Gallery.html">Gallery</a>
+    <a href="./Contact-us.html">Contact Us</a>
+</div>
+
+    <h1 style="text-align: center; padding-top: 50px; padding-bottom: 20px; color: rgb(13, 63, 13); border: width 20; border-color: hotpink;">The Harmony Way</h1>
+
+    <div class="row">
+        <div class="column" onclick="openTab('b1');" style="background:rgb(4, 58, 4);">Origins <p><img src="https://media.bizj.us/view/img/10273770/howtovounteer*1200xx3865-2178-0-177.jpg" width="300"></p> </div>
+        <div class="column" onclick="openTab('b2');" style="background:rgb(121, 60, 3);">Mission <p><img src="https://blog.uniplaces.com/wp-content/uploads/2018/11/rawpixel-1062886-unsplash-1024x683.jpg" width="254"></p></div>
+        <div class="column" onclick="openTab('b3');" style="background:rgb(215, 119, 68);">People <p> <img src="https://blog.uniplaces.com/wp-content/uploads/2018/11/rawpixel-792236-unsplash-1024x683.jpg" width="254"></p></div>
+      </div>
+
+        <div id="b1" class="containerTab" style="display:none;background:rgb(4, 58, 4); text-align: center;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <img src="https://www.deford.co.uk/wp-content/uploads/2016/07/icon-charity-insurance.png" width="100">
+        <h2>Our Origins</h2>
+        <p style="font-size: 20px;">We started out as a small volunteer group, detemined to make real change. With programmes in Brazil, Uganda and Vietnam, we offer help & support to local people, building schools and resources, and creating sustainable jobs.</p>
+    </div>
+
+    <div id="b2" class="containerTab" style="display:none;background:rgb(121, 60, 3); text-align: center;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <img src="https://cdn2.iconfinder.com/data/icons/medical-round-overcolor-1/512/xxx021-512.png" width="100">
+        <h2>Our Mission</h2>
+        <p style="font-size: 20px;">Our mission is to create better living conditions for people all around the world. Whether this is by riasing money for local schools and education facilities, or implementing sustainable farming texhniques, we're determined to make a change.</p>
+    </div>
+
+    <div id="b3" class="containerTab" style="display:none;background:rgb(215, 119, 68); text-align: center;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTbx5NlIIRJupN4yecZTvw9KmyhnwM3iqqa6-r2ZxCJ2Vnn6DT7" width="100">
+        <h2>Our People</h2>
+        <p style="font-size: 20px;">That's where you come in. All of our staff are volunteers, from many different parts of the country. If you think you'd be interested in our volunteering programmes, you can visit the <a href="./Get-involved.html">Get Involved</a> page to find out more.</p>
+    </div>
+
+
+    </div>

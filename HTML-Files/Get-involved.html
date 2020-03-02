@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="../CSS-files/signup-form-css.css">
+    </head>
+
+    <script type="text/javascript">
+    function hide1(){
+        document.getElementById('donatesec').style.display='none';
+    }
+    function show1(){
+        document.getElementById('donatesec').style.display='block';
+    }
+
+    </script>
+    
+    <script type="text/javascript">
+        function hide2(){
+            document.getElementById('volsec').style.display='none';
+        }
+        function show2(){
+            document.getElementById('volsec').style.display='block';
+        }
+    
+        </script>
+
+        <body>
+
+<div class="topnav" id="myTopnav">
+    <a href="./Homepage.html" class="active">Home</a>
+    <a href="./About-us.html">About Us<a>
+    <a href="./Gallery.html">Gallery</a>
+    <a href="./Contact-us.html">Contact Us</a>
+</div>
+
+    <form action="action_page.php">
+        <div class="container">
+          <h1>Register with us today!</h1>
+          <p>Create an account with us so that you can donate, or enrol in one of our volunteer programmes. If you are interested in our volunteering programmes, a member of the relevant team will be in touch via email shortly.</p>
+          <hr>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          <hr>
+
+          <label for="interest"><b>Would you like to volunteer or donate?</b></label>
+          <input type="radio" name="voldon" id="vol" onclick="show2();" onclick="hide1();"> <label for="Volunteer">Volunteer</label>
+          <input type="radio" name="voldon" id="don" onclick="show1();" onclick="hide2();"> <label for="Donate">Donate</label>
+          <hr>
+
+          <div id="donatesec" style="display:none">
+          <label for="Donations"><b>Select donation amount</b></label>
+          <input type="radio" name="donate" id="don1"> <label for="Don1">£5</label>
+          <input type="radio" name="donate" id="don2"> <label for="Don2">£10</label>
+          <input type="radio" name="donate" id="don3"> <label for="Don3">£20</label>
+          <hr>
+          </div>
+
+          <div id="volsec" style="display: none">
+            <label for="Volunteer"><b>Which volunteer programme are you interested in?</b></label>
+            <input type="radio" name="volunteer" id="vol1"> <label for="Vol1">Brazil</label>
+            <input type="radio" name="volunteer" id="vol2"> <label for="Vol2">Uganda</label>
+            <input type="radio" name="volunteer" id="vol3"> <label for="Vol3">Vietnam</label>
+            <hr>
+          </div>
+      
+          <button type="submit" class="registerbtn">Register with Harmony</button>
+        </div>
+      
+    
+      </form>
+
+        </body>
